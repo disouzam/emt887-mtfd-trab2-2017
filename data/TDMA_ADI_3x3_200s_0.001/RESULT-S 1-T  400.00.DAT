@@ -1,0 +1,63 @@
+ ====================================================================================
+               Transient state solution for a 2D rectangular plate
+                    for applications in steel reheating
+                 e.g. Reheating furnaces for rolling processing
+ ====================================================================================
+ Author: Dickson Alves de Souza
+
+ Based on lectures by professor Roberto Parreiras Tavares
+
+ and book Numerical Heat Transfer and Fluid Flow
+ by Suhas V. Patankar (1980)
+
+ Federal University of Minas Gerais (UFMG)
+ October 26th, 2017
+ ====================================================================================
+                              Input parameters:
+
+ Lenght in X direction (meters):           1.0000
+ Lenght in Y direction (meters):           0.2000
+ Nodes in X direction:                          3
+ Nodes in Y direction:                          3
+ ====================================================================================
+
+                       STAGE                1/  5
+                       START Time:         0.0000
+                       END Time:        1140.0000
+                       Iterations:               22
+
+ ====================================================================================
+ Temperature of fluid at left face (T left):             1223.1500
+ Temperature of fluid at right face (T right):           1223.1500
+ Temperature of fluid at bottom face (T bottom):         1223.1500
+ Temperature of fluid at top face (T top):               1223.1500
+ ------------------------------------------------------------------------------------
+ Heat transfer coefficient at left face (H left):          50.0000
+ Heat transfer coefficient at right face (H right):        50.0000
+ Heat transfer coefficient at bottom face (H bottom):       8.0000
+ Heat transfer coefficient at top face (H top):           150.0000
+ ====================================================================================
+
+
+ SOLUTION of LINEAR SYSTEM: TDMA (tri-diagonal matrix algorithm)
+      ADI approach employed in solution.
+ Tolerance:       0.0010
+
+ ====================================================================================
+                    Calculation Results
+ Current time:    400.00000000000000       seconds
+ Maximum Temperature :    580.87343144550971
+ Minimum Temperature :    402.44290555105243
+ Average(algebraic, non-weigthed) Temperature :    492.30502541846977
+ ====================================================================================
+            I           J        X(m)        Y(m)        T(K)  Cp(J/kg.K) K(W/sq-m.K)
+ ====================================================================================
+            1           1      0.0000      0.0000    491.3063    520.0825     53.9685
+            1           2      0.0000      0.1000    444.8879    489.0968     56.1188
+            1           3      0.0000      0.2000    580.8734    578.4982     49.8349
+            2           1      0.5000      0.0000    448.6853    491.4666     55.9443
+            2           2      0.5000      0.1000    402.4429    466.7131     58.0355
+            2           3      0.5000      0.2000    545.4818    556.9200     51.4511
+            3           1      1.0000      0.0000    491.3063    520.0825     53.9685
+            3           2      1.0000      0.1000    444.8878    489.0968     56.1188
+            3           3      1.0000      0.2000    580.8734    578.4982     49.8349

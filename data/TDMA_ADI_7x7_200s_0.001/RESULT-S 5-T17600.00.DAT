@@ -1,0 +1,183 @@
+ ====================================================================================
+               Transient state solution for a 2D rectangular plate
+                    for applications in steel reheating
+                 e.g. Reheating furnaces for rolling processing
+ ====================================================================================
+ Author: Dickson Alves de Souza
+
+ Based on lectures by professor Roberto Parreiras Tavares
+
+ and book Numerical Heat Transfer and Fluid Flow
+ by Suhas V. Patankar (1980)
+
+ Federal University of Minas Gerais (UFMG)
+ October 26th, 2017
+ ====================================================================================
+                              Input parameters:
+
+ Lenght in X direction (meters):           1.0000
+ Lenght in Y direction (meters):           0.2000
+ Nodes in X direction:                          7
+ Nodes in Y direction:                          7
+ ====================================================================================
+
+                       STAGE                1/  5
+                       START Time:         0.0000
+                       END Time:        1140.0000
+                       Iterations:              879
+
+ ====================================================================================
+ Temperature of fluid at left face (T left):             1223.1500
+ Temperature of fluid at right face (T right):           1223.1500
+ Temperature of fluid at bottom face (T bottom):         1223.1500
+ Temperature of fluid at top face (T top):               1223.1500
+ ------------------------------------------------------------------------------------
+ Heat transfer coefficient at left face (H left):          50.0000
+ Heat transfer coefficient at right face (H right):        50.0000
+ Heat transfer coefficient at bottom face (H bottom):       8.0000
+ Heat transfer coefficient at top face (H top):           150.0000
+ ====================================================================================
+
+
+ ====================================================================================
+
+                       STAGE                2/  5
+                       START Time:      1140.0000
+                       END Time:        3060.0000
+                       Iterations:              879
+
+ ====================================================================================
+ Temperature of fluid at left face (T left):             1423.1500
+ Temperature of fluid at right face (T right):           1423.1500
+ Temperature of fluid at bottom face (T bottom):         1423.1500
+ Temperature of fluid at top face (T top):               1423.1500
+ ------------------------------------------------------------------------------------
+ Heat transfer coefficient at left face (H left):          50.0000
+ Heat transfer coefficient at right face (H right):        50.0000
+ Heat transfer coefficient at bottom face (H bottom):       8.0000
+ Heat transfer coefficient at top face (H top):           150.0000
+ ====================================================================================
+
+
+ ====================================================================================
+
+                       STAGE                3/  5
+                       START Time:      3060.0000
+                       END Time:        4980.0000
+                       Iterations:              879
+
+ ====================================================================================
+ Temperature of fluid at left face (T left):             1513.1500
+ Temperature of fluid at right face (T right):           1513.1500
+ Temperature of fluid at bottom face (T bottom):         1513.1500
+ Temperature of fluid at top face (T top):               1513.1500
+ ------------------------------------------------------------------------------------
+ Heat transfer coefficient at left face (H left):          50.0000
+ Heat transfer coefficient at right face (H right):        50.0000
+ Heat transfer coefficient at bottom face (H bottom):       8.0000
+ Heat transfer coefficient at top face (H top):           150.0000
+ ====================================================================================
+
+
+ ====================================================================================
+
+                       STAGE                4/  5
+                       START Time:      4980.0000
+                       END Time:        8400.0000
+                       Iterations:              879
+
+ ====================================================================================
+ Temperature of fluid at left face (T left):             1503.1500
+ Temperature of fluid at right face (T right):           1503.1500
+ Temperature of fluid at bottom face (T bottom):         1503.1500
+ Temperature of fluid at top face (T top):               1523.1500
+ ------------------------------------------------------------------------------------
+ Heat transfer coefficient at left face (H left):          50.0000
+ Heat transfer coefficient at right face (H right):        50.0000
+ Heat transfer coefficient at bottom face (H bottom):       8.0000
+ Heat transfer coefficient at top face (H top):           150.0000
+ ====================================================================================
+
+
+ ====================================================================================
+
+                       STAGE                5/  5
+                       START Time:      8400.0000
+                       END Time:       18400.0000
+                       Iterations:              879
+
+ ====================================================================================
+ Temperature of fluid at left face (T left):             1393.1500
+ Temperature of fluid at right face (T right):           1393.1500
+ Temperature of fluid at bottom face (T bottom):         1393.1500
+ Temperature of fluid at top face (T top):               1433.1500
+ ------------------------------------------------------------------------------------
+ Heat transfer coefficient at left face (H left):          50.0000
+ Heat transfer coefficient at right face (H right):        50.0000
+ Heat transfer coefficient at bottom face (H bottom):       8.0000
+ Heat transfer coefficient at top face (H top):           150.0000
+ ====================================================================================
+
+
+ SOLUTION of LINEAR SYSTEM: TDMA (tri-diagonal matrix algorithm)
+      ADI approach employed in solution.
+ Tolerance:       0.0010
+
+ ====================================================================================
+                    Calculation Results
+ Current time:    17600.000000000000       seconds
+ Maximum Temperature :    1425.2447038740333
+ Minimum Temperature :    1397.1654835126483
+ Average(algebraic, non-weigthed) Temperature :    1410.8545650235503
+ ====================================================================================
+            I           J        X(m)        Y(m)        T(K)  Cp(J/kg.K) K(W/sq-m.K)
+ ====================================================================================
+            1           1      0.0000      0.0000   1397.1655    703.0000     48.5740
+            1           2      0.0000      0.0333   1398.6950    703.0000     48.6575
+            1           3      0.0000      0.0667   1400.5599    703.0000     48.7597
+            1           4      0.0000      0.1000   1402.9273    703.0000     48.8901
+            1           5      0.0000      0.1333   1406.0636    703.0000     49.0639
+            1           6      0.0000      0.1667   1410.3902    703.0000     49.3056
+            1           7      0.0000      0.2000   1416.5751    703.0000     49.6554
+            2           1      0.1667      0.0000   1401.8480    703.0000     48.8305
+            2           2      0.1667      0.0333   1404.9679    703.0000     49.0030
+            2           3      0.1667      0.0667   1408.2490    703.0000     49.1857
+            2           4      0.1667      0.1000   1411.7335    703.0000     49.3812
+            2           5      0.1667      0.1333   1415.4585    703.0000     49.5919
+            2           6      0.1667      0.1667   1419.4481    703.0000     49.8194
+            2           7      0.1667      0.2000   1423.6995    703.0000     50.0640
+            3           1      0.3333      0.0000   1403.1833    703.0000     48.9042
+            3           2      0.3333      0.0333   1406.7250    703.0000     49.1007
+            3           3      0.3333      0.0667   1410.2990    703.0000     49.3005
+            3           4      0.3333      0.1000   1413.9136    703.0000     49.5043
+            3           5      0.3333      0.1333   1417.5725    703.0000     49.7122
+            3           6      0.3333      0.1667   1421.2746    703.0000     49.9242
+            3           7      0.3333      0.2000   1425.0121    703.0000     50.1400
+            4           1      0.5000      0.0000   1403.4476    703.0000     48.9188
+            4           2      0.5000      0.0333   1407.0706    703.0000     49.1199
+            4           3      0.5000      0.0667   1410.6958    703.0000     49.3228
+            4           4      0.5000      0.1000   1414.3259    703.0000     49.5276
+            4           5      0.5000      0.1333   1417.9618    703.0000     49.7344
+            4           6      0.5000      0.1667   1421.6024    703.0000     49.9431
+            4           7      0.5000      0.2000   1425.2447    703.0000     50.1535
+            5           1      0.6667      0.0000   1403.1834    703.0000     48.9042
+            5           2      0.6667      0.0333   1406.7250    703.0000     49.1007
+            5           3      0.6667      0.0667   1410.2991    703.0000     49.3005
+            5           4      0.6667      0.1000   1413.9136    703.0000     49.5043
+            5           5      0.6667      0.1333   1417.5726    703.0000     49.7122
+            5           6      0.6667      0.1667   1421.2746    703.0000     49.9242
+            5           7      0.6667      0.2000   1425.0121    703.0000     50.1400
+            6           1      0.8333      0.0000   1401.8482    703.0000     48.8305
+            6           2      0.8333      0.0333   1404.9681    703.0000     49.0030
+            6           3      0.8333      0.0667   1408.2493    703.0000     49.1857
+            6           4      0.8333      0.1000   1411.7338    703.0000     49.3812
+            6           5      0.8333      0.1333   1415.4587    703.0000     49.5919
+            6           6      0.8333      0.1667   1419.4484    703.0000     49.8194
+            6           7      0.8333      0.2000   1423.6997    703.0000     50.0640
+            7           1      1.0000      0.0000   1397.1655    703.0000     48.5740
+            7           2      1.0000      0.0333   1398.6951    703.0000     48.6575
+            7           3      1.0000      0.0667   1400.5599    703.0000     48.7597
+            7           4      1.0000      0.1000   1402.9274    703.0000     48.8901
+            7           5      1.0000      0.1333   1406.0636    703.0000     49.0639
+            7           6      1.0000      0.1667   1410.3902    703.0000     49.3057
+            7           7      1.0000      0.2000   1416.5751    703.0000     49.6554

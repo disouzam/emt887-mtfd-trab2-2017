@@ -1,0 +1,83 @@
+ ====================================================================================
+               Transient state solution for a 2D rectangular plate
+                    for applications in steel reheating
+                 e.g. Reheating furnaces for rolling processing
+ ====================================================================================
+ Author: Dickson Alves de Souza
+
+ Based on lectures by professor Roberto Parreiras Tavares
+
+ and book Numerical Heat Transfer and Fluid Flow
+ by Suhas V. Patankar (1980)
+
+ Federal University of Minas Gerais (UFMG)
+ October 26th, 2017
+ ====================================================================================
+                              Input parameters:
+
+ Lenght in X direction (meters):           1.0000
+ Lenght in Y direction (meters):           0.2000
+ Nodes in X direction:                          3
+ Nodes in Y direction:                          3
+ ====================================================================================
+
+                       STAGE                1/  5
+                       START Time:         0.0000
+                       END Time:        1140.0000
+                       Iterations:               92
+
+ ====================================================================================
+ Temperature of fluid at left face (T left):             1223.1500
+ Temperature of fluid at right face (T right):           1223.1500
+ Temperature of fluid at bottom face (T bottom):         1223.1500
+ Temperature of fluid at top face (T top):               1223.1500
+ ------------------------------------------------------------------------------------
+ Heat transfer coefficient at left face (H left):          50.0000
+ Heat transfer coefficient at right face (H right):        50.0000
+ Heat transfer coefficient at bottom face (H bottom):       8.0000
+ Heat transfer coefficient at top face (H top):           150.0000
+ ====================================================================================
+
+
+ ====================================================================================
+
+                       STAGE                2/  5
+                       START Time:      1140.0000
+                       END Time:        3060.0000
+                       Iterations:               92
+
+ ====================================================================================
+ Temperature of fluid at left face (T left):             1423.1500
+ Temperature of fluid at right face (T right):           1423.1500
+ Temperature of fluid at bottom face (T bottom):         1423.1500
+ Temperature of fluid at top face (T top):               1423.1500
+ ------------------------------------------------------------------------------------
+ Heat transfer coefficient at left face (H left):          50.0000
+ Heat transfer coefficient at right face (H right):        50.0000
+ Heat transfer coefficient at bottom face (H bottom):       8.0000
+ Heat transfer coefficient at top face (H top):           150.0000
+ ====================================================================================
+
+
+ SOLUTION of LINEAR SYSTEM: TDMA (tri-diagonal matrix algorithm)
+      ADI approach employed in solution.
+ Tolerance:       0.0010
+
+ ====================================================================================
+                    Calculation Results
+ Current time:    1540.0000000000000       seconds
+ Maximum Temperature :    1008.8171280340500
+ Minimum Temperature :    711.61097857942093
+ Average(algebraic, non-weigthed) Temperature :    887.62841616782976
+ ====================================================================================
+            I           J        X(m)        Y(m)        T(K)  Cp(J/kg.K) K(W/sq-m.K)
+ ====================================================================================
+            1           1      0.0000      0.0000    927.2476    844.0105     38.7510
+            1           2      0.0000      0.1000    819.0738    686.0460     40.9260
+            1           3      0.0000      0.2000   1008.8171   1128.6962     38.1323
+            2           1      0.5000      0.0000    826.1485    691.7283     40.7405
+            2           2      0.5000      0.1000    711.6110    634.1387     44.3849
+            2           3      0.5000      0.2000    940.6193    878.1283     38.5864
+            3           1      1.0000      0.0000    927.2476    844.0105     38.7510
+            3           2      1.0000      0.1000    819.0738    686.0460     40.9260
+            3           3      1.0000      0.2000   1008.8171   1128.6962     38.1323
