@@ -55,37 +55,31 @@
 			<Add option="-ffixed-form" />
 			<Add option="-Wall" />
 		</Compiler>
-		<Linker>
-			<Add library="C:/MinGW/lib/gcc/mingw32/6.3.0/libgcc.a" />
-		</Linker>
-		<Unit filename="Coefficients.f">
+		<Unit filename="src/Coefficients.f">
 			<Option weight="1" />
 		</Unit>
-		<Unit filename="CustomDouble.f">
+		<Unit filename="src/CustomDouble.f">
 			<Option weight="0" />
 		</Unit>
-		<Unit filename="Geometry.f">
+		<Unit filename="src/Geometry.f">
 			<Option weight="0" />
 		</Unit>
-		<Unit filename="Properties.f">
+		<Unit filename="src/Properties.f">
 			<Option weight="0" />
 		</Unit>
-		<Unit filename="Results.f">
+		<Unit filename="src/Results.f">
 			<Option weight="1" />
 		</Unit>
-		<Unit filename="Solver.f">
+		<Unit filename="src/Solver.f">
 			<Option weight="2" />
 		</Unit>
-		<Unit filename="Testing.f">
+		<Unit filename="src/Testing.f">
 			<Option weight="3" />
 		</Unit>
-		<Unit filename="main.f">
+		<Unit filename="src/main.f">
 			<Option weight="3" />
 		</Unit>
 		<Extensions>
-			<code_completion />
-			<envvars />
-			<debugger />
 			<lib_finder disable_auto="1" />
 		</Extensions>
 	</Project>

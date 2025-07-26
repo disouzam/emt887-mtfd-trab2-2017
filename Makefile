@@ -22,8 +22,8 @@ Solver.o \
 Testing.o \
 main.o 
 
-SRC_DIR_fd1 = 
-OBJS_DIR = obj/Release/
+SRC_DIR_fd1 = src/
+OBJS_DIR = obj/Release/src/
 EXE_DIR = bin/Release/
 
 EXE = MTFDTrab2.exe
